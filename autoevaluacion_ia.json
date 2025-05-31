@@ -1,0 +1,180 @@
+{
+  "autoevaluacion": {
+    "Estrategia y Liderazgo": [
+      {
+        "pregunta": "¿Su organización tiene una estrategia formal de IA documentada y comunicada?",
+        "opciones": {
+          "1": "No existe estrategia formal",
+          "2": "Estrategia inicial en desarrollo",
+          "3": "Estrategia definida y alineada con objetivos de negocio",
+          "4": "IA es central en la estrategia corporativa",
+          "5": "IA define nuevos mercados y oportunidades"
+        }
+      },
+      {
+        "pregunta": "¿Qué nivel de conocimiento tienen los líderes sobre el potencial de la IA?",
+        "opciones": {
+          "1": "Conocimiento muy limitado",
+          "2": "Conocimiento básico",
+          "3": "Buenos fundamentos y visión clara",
+          "4": "Líderes bien informados y comprometidos",
+          "5": "Liderazgo experto e innovador"
+        }
+      },
+      {
+        "pregunta": "¿Existe un responsable o equipo dedicado a la estrategia de IA?",
+        "opciones": {
+          "1": "No hay responsables específicos",
+          "2": "Responsabilidad compartida informalmente",
+          "3": "Equipo básico designado",
+          "4": "Equipo especializado multidisciplinario",
+          "5": "Centro de excelencia establecido"
+        }
+      }
+    ],
+    "Datos y Tecnología": [
+      {
+        "pregunta": "¿Cuál es el estado de la infraestructura de datos de su organización?",
+        "opciones": {
+          "1": "Datos dispersos, sin gestión centralizada",
+          "2": "Sistemas básicos de gestión de datos",
+          "3": "Arquitectura de datos moderna y escalable",
+          "4": "Ecosistema de datos en tiempo real",
+          "5": "Inteligencia aumentada y ecosistemas avanzados"
+        }
+      },
+      {
+        "pregunta": "¿Qué porcentaje de sus datos considera de alta calidad y listos para IA?",
+        "opciones": {
+          "1": "< 20%",
+          "2": "20-40%",
+          "3": "40-60%",
+          "4": "60-80%",
+          "5": "> 80%"
+        }
+      },
+      {
+        "pregunta": "¿Qué tipo de infraestructura tecnológica tienen para IA?",
+        "opciones": {
+          "1": "Herramientas básicas, sin infraestructura específica",
+          "2": "Plataformas cloud básicas",
+          "3": "Infraestructura escalable y segura",
+          "4": "Sistemas avanzados y auto-adaptativos",
+          "5": "Desarrollo de tecnologías IA propietarias"
+        }
+      }
+    ],
+    "Talento y Capacidades": [
+      {
+        "pregunta": "¿Qué porcentaje de su personal tiene formación en IA?",
+        "opciones": {
+          "1": "< 5%",
+          "2": "5-15%",
+          "3": "15-35%",
+          "4": "35-65%",
+          "5": "> 65%"
+        }
+      },
+      {
+        "pregunta": "¿Tienen especialistas en IA/Data Science en la organización?",
+        "opciones": {
+          "1": "No tenemos especialistas",
+          "2": "1-2 especialistas básicos",
+          "3": "Equipo pequeño pero especializado",
+          "4": "Múltiples equipos especializados",
+          "5": "Organización con capacidades IA nativas"
+        }
+      },
+      {
+        "pregunta": "¿Existe un programa de capacitación continua en IA?",
+        "opciones": {
+          "1": "No existe programa formal",
+          "2": "Capacitación esporádica",
+          "3": "Programa estructurado básico",
+          "4": "Programa avanzado y continuo",
+          "5": "Centro de formación e investigación"
+        }
+      }
+    ],
+    "Implementación y Adopción": [
+      {
+        "pregunta": "¿Qué porcentaje de sus procesos de negocio utilizan IA?",
+        "opciones": {
+          "1": "< 10%",
+          "2": "10-25%",
+          "3": "25-50%",
+          "4": "50-80%",
+          "5": "> 80%"
+        }
+      },
+      {
+        "pregunta": "¿Cuántos proyectos de IA están en producción?",
+        "opciones": {
+          "1": "Ninguno o muy pocos pilotos",
+          "2": "1-3 proyectos en producción",
+          "3": "4-10 proyectos escalados",
+          "4": "11-25 proyectos integrados",
+          "5": "> 25 proyectos o IA omnipresente"
+        }
+      },
+      {
+        "pregunta": "¿Cómo miden el ROI de los proyectos de IA?",
+        "opciones": {
+          "1": "No medimos ROI específico",
+          "2": "Métricas básicas ocasionales",
+          "3": "KPIs definidos y seguimiento regular",
+          "4": "Métricas avanzadas y valor integral",
+          "5": "Medición continua y optimización automática"
+        }
+      }
+    ],
+    "Gobernanza y Ética": [
+      {
+        "pregunta": "¿Tienen políticas de gobernanza para el uso de IA?",
+        "opciones": {
+          "1": "No existen políticas específicas",
+          "2": "Políticas básicas en desarrollo",
+          "3": "Políticas completas implementadas",
+          "4": "Gobernanza adaptativa y controles avanzados",
+          "5": "Estándares éticos de vanguardia"
+        }
+      },
+      {
+        "pregunta": "¿Consideran aspectos éticos y de sesgo en sus implementaciones de IA?",
+        "opciones": {
+          "1": "No se considera sistemáticamente",
+          "2": "Consideración básica ocasional",
+          "3": "Evaluación regular de sesgo y ética",
+          "4": "Marcos éticos integrados",
+          "5": "Liderazgo en IA responsable"
+        }
+      },
+      {
+        "pregunta": "¿Qué nivel de seguridad y privacidad tienen en sus sistemas de IA?",
+        "opciones": {
+          "1": "Seguridad básica estándar",
+          "2": "Medidas de seguridad mejoradas",
+          "3": "Protocolos robustos específicos para IA",
+          "4": "Seguridad avanzada y monitoreo continuo",
+          "5": "Sistemas de seguridad auto-adaptativos"
+        }
+      }
+    ]
+  },
+  "guia_puntuacion": {
+    "interpretacion": {
+      "15-30": "Nivel 1 (Ad-hoc): Su organización está en las etapas iniciales de exploración de IA.",
+      "31-45": "Nivel 2 (Experimental): Han comenzado a experimentar con IA de manera más estructurada.",
+      "46-60": "Nivel 3 (Operacionalizado): Tienen implementaciones sólidas y escalables de IA.",
+      "61-75": "Nivel 4 (Transformacional): La IA es una ventaja competitiva estratégica clave.",
+      "76-90": "Nivel 5 (Innovador): Son líderes en innovación e implementación de IA."
+    },
+    "dimensiones": {
+      "Estrategia y Liderazgo": "Evalúa el compromiso y visión estratégica",
+      "Datos y Tecnología": "Mide la preparación técnica y de infraestructura",
+      "Talento y Capacidades": "Evalúa las competencias humanas disponibles",
+      "Implementación y Adopción": "Mide el nivel actual de uso de IA",
+      "Gobernanza y Ética": "Evalúa la responsabilidad y control en el uso de IA"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+Nivel,Nombre,Descripción,Procesos_IA,Inversión_TI,Personal_Capacitado
+Nivel 1,Ad-hoc,Exploración inicial y concienciación,< 10% de procesos utilizan IA,Inversión en IA < 1% del presupuesto TI,< 5% del personal capacitado en IA
+Nivel 2,Experimental,Experimentación y adopción inicial,10-25% de procesos utilizan IA,Inversión en IA 1-3% del presupuesto TI,5-15% del personal capacitado en IA
+Nivel 3,Operacionalizado,Implementación sistemática y escalable,25-50% de procesos utilizan IA,Inversión en IA 3-7% del presupuesto TI,15-35% del personal capacitado en IA
+Nivel 4,Transformacional,IA como ventaja competitiva estratégica,50-80% de procesos utilizan IA,Inversión en IA 7-15% del presupuesto TI,35-65% del personal capacitado en IA
+Nivel 5,Innovador,Liderazgo e innovación disruptiva,> 80% de procesos utilizan IA,Inversión en IA > 15% del presupuesto TI,> 65% del personal capacitado en IA

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Madurez en IA - Autoevaluación Organizacional</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Welcome Screen -->
+        <section id="welcome-screen" class="screen active">
+            <div class="container">
+                <div class="welcome-content">
+                    <div class="hero-section">
+                        <h1>Evaluación de Madurez en Inteligencia Artificial</h1>
+                        <p class="hero-subtitle">Descubra el nivel actual de madurez de su organización en IA y obtenga recomendaciones personalizadas para su evolución estratégica.</p>
+                    </div>
+                    
+                    <div class="maturity-model-overview">
+                        <h2>Modelo de Madurez en IA</h2>
+                        <div class="maturity-levels">
+                            <div class="level-card level-1">
+                                <div class="level-number">1</div>
+                                <div class="level-info">
+                                    <h3>Ad-hoc</h3>
+                                    <p>Exploración inicial y concienciación</p>
+                                </div>
+                            </div>
+                            <div class="level-card level-2">
+                                <div class="level-number">2</div>
+                                <div class="level-info">
+                                    <h3>Experimental</h3>
+                                    <p>Experimentación y adopción inicial</p>
+                                </div>
+                            </div>
+                            <div class="level-card level-3">
+                                <div class="level-number">3</div>
+                                <div class="level-info">
+                                    <h3>Operacionalizado</h3>
+                                    <p>Implementación sistemática y escalable</p>
+                                </div>
+                            </div>
+                            <div class="level-card level-4">
+                                <div class="level-number">4</div>
+                                <div class="level-info">
+                                    <h3>Transformacional</h3>
+                                    <p>IA como ventaja competitiva estratégica</p>
+                                </div>
+                            </div>
+                            <div class="level-card level-5">
+                                <div class="level-number">5</div>
+                                <div class="level-info">
+                                    <h3>Innovador</h3>
+                                    <p>Liderazgo e innovación disruptiva</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assessment-info">
+                        <h3>¿Qué incluye esta evaluación?</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-icon">📊</div>
+                                <h4>15 Preguntas Estratégicas</h4>
+                                <p>Evaluación integral en 5 dimensiones clave de la madurez en IA</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">📈</div>
+                                <h4>Análisis Detallado</h4>
+                                <p>Puntuación por dimensión y nivel general de madurez</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">🎯</div>
+                                <h4>Recomendaciones Personalizadas</h4>
+                                <p>Acciones específicas para avanzar al siguiente nivel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="start-section">
+                        <p class="start-text">Tiempo estimado: <strong>5-7 minutos</strong></p>
+                        <button class="btn btn--primary btn--lg" id="start-assessment">
+                            Comenzar Evaluación
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment Screen -->
+        <section id="assessment-screen" class="screen">
+            <div class="container">
+                <div class="assessment-header">
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span id="current-question">1</span> de <span id="total-questions">15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="assessment-content">
+                    <div class="question-container">
+                        <div class="dimension-badge" id="current-dimension"></div>
+                        <h2 class="question-title" id="question-title"></h2>
+                        <div class="options-container" id="options-container"></div>
+                    </div>
+
+                    <div class="navigation-buttons">
+                        <button class="btn btn--outline" id="prev-button" disabled>
+                            ← Anterior
+                        </button>
+                        <button class="btn btn--primary" id="next-button" disabled>
+                            Siguiente →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="results-screen" class="screen">
+            <div class="container">
+                <div class="results-content">
+                    <div class="results-header">
+                        <h1>Resultados de su Evaluación</h1>
+                        <div class="overall-score">
+                            <div class="score-circle">
+                                <span class="score-number" id="total-score"></span>
+                                <span class="score-max">/ 75</span>
+                            </div>
+                            <div class="maturity-level">
+                                <div class="level-badge" id="maturity-level-badge"></div>
+                                <h2 id="maturity-level-name"></h2>
+                                <p id="maturity-level-description"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-details">
+                        <div class="dimensions-breakdown">
+                            <h3>Puntuación por Dimensión</h3>
+                            <div class="chart-container">
+                                <canvas id="dimensionsChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="recommendations-section">
+                            <h3>Recomendaciones para su Nivel</h3>
+                            <div class="recommendations-list" id="recommendations-list"></div>
+                        </div>
+                    </div>
+
+                    <div class="results-actions">
+                        <button class="btn btn--outline" id="view-details">
+                            Ver Análisis Detallado
+                        </button>
+                        <button class="btn btn--primary" id="restart-assessment">
+                            Realizar Nueva Evaluación
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis Screen -->
+        <section id="details-screen" class="screen">
+            <div class="container">
+                <div class="details-content">
+                    <div class="details-header">
+                        <h1>Análisis Detallado por Dimensión</h1>
+                        <button class="btn btn--outline" id="back-to-results">
+                            ← Volver a Resultados
+                        </button>
+                    </div>
+
+                    <div class="dimensions-detailed" id="dimensions-detailed">
+                        <!-- Detailed dimension analysis will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
