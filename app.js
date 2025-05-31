@@ -418,7 +418,8 @@ class AIMaturityAssessment {
         levelBadge.style.backgroundColor = levelData.color;
 
         document.getElementById('maturity-level-name').textContent = levelData.nombre;
-        enviarResultadoPorEmail(levelData.nombre);
+        const resultadoFinal = document.getElementById("maturity-level-name").innerText; 
+        enviarResultadoPorEmail(resultadoFinal);
         document.getElementById('maturity-level-description').textContent = levelData.descripcion;
 
         // Create dimensions chart
