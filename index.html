@@ -188,5 +188,15 @@
     </div>
 
     <script src="app.js"></script>
+    <form id="send-form" action="https://formspree.io/f/xovwaygl" method="POST" style="display:none">
+  <input type="hidden" name="email" value="detorrespa@yahoo.com">
+  <input type="hidden" name="result" id="form-result">
+</form>
+<script>
+  function enviarResultadoPorEmail(resultado) {
+    document.getElementById('form-result').value = resultado;
+    document.getElementById('send-form').submit();
+  }
+</script>
 </body>
 </html>
